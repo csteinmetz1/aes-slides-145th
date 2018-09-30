@@ -4,13 +4,15 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>NeuralReverberator</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/minimal.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <link rel="shortcut icon" href="/img/favicon.ico" />
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -24,8 +26,186 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<!-- Title Slide -->
+				<section> 
+					<div class="title">
+            <h1 style="margin: 75px 0 0 0;">NeuralReverberator</h1>
+            <h5 style="margin: 0 0 0 0;">AES MATLAB Plugin Student Competition</h5>
+            <h6 style="margin: 5px 0 0 0;">October 19th, 2018 - 145th AES Convention - New York, New York</h6></h5>
+						<h3 style="margin: 100px 0 0 0;">Christian Steinmetz</h3>
+						<h5>Clemson University</h5>
+						<h6>Holcombe Department of Electrical and Computer Engineering
+						<br> Department of Performing Arts, Audio Technology Concentration</h6>
+					</div>
+				</section>
+				<!-- What is it? -->
+				<section>
+					<section>
+						<div class="divider_h1">
+				    		<h1>What is it?</h1>
+						</div>
+					</section>
+					<section>						
+						<h2>AI driven convolutional reverb plug-in</h2>
+						<br>
+            <img src=static/img/plugin.jpg alt=plugin>
+            <h5 style="text-align: center">VST plug-in running in REAPER DAW</h5>
+					</section>
+					<section>
+						<div class="row">
+		      		<div class="column">
+                <img src=static/img/plugin.jpg alt=plugin>
+              </div>
+							<div class="coloumn">							
+                <div class="fragment highlight-current-blue">
+                  <audio controls>
+                    <source src=static/media/eGtrDemoDry.wav type=audio/wav>
+                  </audio> 
+                  <p>Dry</p>
+                </div>
+                <div class="fragment highlight-current-blue">
+                  <audio controls>
+                    <source src=static/media/eGtrDemoDry.wav type=audio/wav>
+                  </audio> 
+                  <p>Dry</p>
+                </div>						
+                <div class="fragment highlight-current-blue">
+                  <audio controls>
+                    <source src=static/media/eGtrDemoDry.wav type=audio/wav>
+                  </audio> 
+                  <p>Dry</p>
+                </div>
+                <div class="fragment highlight-current-blue">
+                  <audio controls>
+                    <source src=static/media/eGtrDemoDry.wav type=audio/wav>
+                  </audio> 
+                  <p>Dry</p>
+                </div>				        
+              </div>
+            </div>
+					</section>
+        </section>
+        <!-- Autoencoders -->
+        <section>
+          <section>          
+            <div class="divider_h1">
+              <h1>Autoencoders</h1>
+            </div>
+          </section>
+          <section>
+            <h2>MNIST Digit Autoencoder</h2>
+            <img src="static/img/mnist_autoencoder.jpg" alt="MNIST Autoencoder" style="width:100%;">
+          </section>
+          <section>
+              <h2>Spectral Autoencoder</h2>
+              <img src="static/img/spectral_autoencoder.jpg" alt="Spectral Autoencoder" style="width:100%;">
+              <audio controls>
+									<source src=static/media/input.mp3 type=audio/wav>
+              </audio>
+              <audio controls>
+                <source src=static/media/output.mp3 type=audio/wav>
+              </audio>  
+          </section>
+          <section>
+            <h2>Phase Reconstruction</h2>
+            <img src="static/img/reconstruction.jpg" alt="Dataset images" style="width:100%;">
+            <h4 style="margin: 80px 0 5px 0px;"><strong>Signal estimation from modified short-time Fourier transform</strong></h4>
+            <h6> D. Griffin and Jae Lim</h6>  
+          </section>
+        </section>
+        <!-- Dataset -->
+        <section>
+          <section>          
+            <div class="divider_h1">
+              <h1>Dataset</h1>
+            </div>
+          </section>
+          <section>
+            <h2>~2,000 impulse responses</h2>
+            <img src="static/img/datasetimages.jpg" alt="Dataset images" style="width:100%;">
+            <h4 style="text-align: center" class="fragment fade-up">Truncated to 2 seconds in length</h4>
+            <h4 style="text-align: center" class="fragment fade-up">Downsampled to 16 kHz</h4>
+            <h6 style="text-align: center">Open AIR Library, Greg Hopkins, C4DM, and others</h6>
+          </section>
+        </section>
+        <!-- Plug-in -->
+        <section>
+          <section>
+            <div class="divider_h1">
+              <h1>MATLAB Plug-in</h1>
+            </div>   
+          </section>
+          <section>
+            <h2>Controls</h2>
+            <div class="row">
+              <div class="column">
+                <img src=static/img/plugin.jpg alt=plugin>
+              </div>
+              <div class="column">
+                <div>
+                  <h4 class="fragment fade-up" style="margin: 10px 0 15px 25px;"> Input Gain </h4>
+                  <h4 class="fragment fade-up" style="margin:    0 0 15px 25px;"> Latent Space </h4>
+                  <h4 class="fragment fade-up" style="margin:    0 0 15px 25px;"> Stereo Width </h4>
+                  <h4 class="fragment fade-up" style="margin:    0 0 15px 25px;"> Pre-Delay </h4>
+                  <h4 class="fragment fade-up" style="margin:    0 0 15px 25px;"> Filtering </h4>
+                  <h4 class="fragment fade-up" style="margin:    0 0 15px 25px;"> Mix </h4>
+                  <h4 class="fragment fade-up" style="margin:    0 0 15px 25px;"> Resampling </h4>
+                </div>
+              </div>
+          </section>
+          <section>
+            <h2>Latent Space</h2>
+            <!-- Create a cool GIF here that shows traversal of the latent space -->
+            <img src="static/img/traverse_circle_tilt.gif" alt="latent space" style="width:100%;">  
+          </section>
+          <section>
+            <h2>Stereo Width</h2>
+            <h4>dsp.FrequencyDomainFIRFilter System object</h4>
+          </section>
+          <section>
+            <h2>Pre-Delay</h2>
+            <h4>dsp.VariableFractionalDelay System object</h4>
+          </section>
+          <section>
+            <h2>Filtering</h2>
+            <h4>filter</h4>
+            <h4></h4>
+          </section>
+        </section>
+        <!-- Future Directions -->
+        <section>
+          <section>          
+            <div class="divider_h1">
+              <h1>Future Directions</h1>
+            </div>
+          </section>
+          <section>
+            <h2>Latent space arithmetic</h2>
+            <img src="static/img/facemaths.jpg" alt="Face maths" style="margin: 50px 0 0 0; width:100%;">
+            <h4 style="margin: 80px 0 5px 0px;"><strong>Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks</strong></h4>
+            <h6> Alec Radford, Luke Metz, Soumith Chintala</h6>           
+          </section>
+          <section>
+            <h2>Impulse response parallel</h2>
+            <img src="static/img/nverbmaths.jpg" alt="nverb maths" style="width:100%;">  
+          </section>
+          <section>
+            <h2>WaveNet autoencoder architecture</h2>
+            <img src="static/img/wavenetanimation.gif" alt="wavenet" style="margin: 20px 0 0 0; width:65%;">  
+            <h4 style="margin: 80px 0 5px 0px;"><strong>WaveNet: A Generative Model for Raw Audio</strong></h4>
+            <h6> Aaron van den Oord, Sander Dieleman, Heiga Zen, Karen Simonyan, Oriol Vinyals, Alex Graves, Nal Kalchbrenner, Andrew Senior, Koray Kavukcuoglu</h6>    
+          </section>
+        </section>
+        <!-- Thank You -->
+        <section>
+          <h1>Thank you!</h1>
+          <h3 style="margin: 25px 0 0 0;"> Code, trained models, and VST builds available on GitHub</h3>
+          <h5><a href="https://github.com/csteinmetz1/NeuralReverberator">https://github.com/csteinmetz1/NeuralReverberator</a></h5>   
+          <h3 style="margin: 25px 0 0 0;"> More details on blogpost</h3>
+          <h5><a href="http://www.christiansteinmetz.com/projects-blog/neuralreverberator">http://www.christiansteinmetz.com/projects-blog/neuralreverberator</a></h5>   
+          <h4> <img src="static/img/twitter.png" alt="twitter" style="margin: 50px 10px 0 0; width: 30px"> @csteinmetz1</h4> 
+          <h4> <img src="static/img/mail.png" alt="mail" style="margin: 5px 10px 0 0; width: 30px"> cjstein@clemson.edu</h4>
+        </section>
 			</div>
 		</div>
 
@@ -37,6 +217,10 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+
+        // Display the page number of the current slide
+        slideNumber: true,
+
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
