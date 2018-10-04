@@ -11,7 +11,6 @@
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
-
     <link rel="shortcut icon" href="/img/favicon.ico" />
 
 		<!-- Printing and PDF exports -->
@@ -94,11 +93,11 @@
           </section>
           <section>
             <h2>MNIST Digit Autoencoder</h2>
-            <img src="static/img/mnist_autoencoder.jpg" alt="MNIST Autoencoder" style="width:100%;">
+            <img src="static/img/mnist_autoencoder.jpg" alt="MNIST Autoencoder" style="width:95%;">
           </section>
           <section>
               <h2>Spectral Autoencoder</h2>
-              <img src="static/img/spectral_autoencoder.jpg" alt="Spectral Autoencoder" style="width:100%;">
+              <img src="static/img/spectral_autoencoder.jpg" alt="Spectral Autoencoder" style="width:95%;">
               <audio controls>
 									<source src=static/media/input.mp3 type=audio/wav>
               </audio>
@@ -108,8 +107,8 @@
           </section>
           <section>
             <h2>Phase Reconstruction</h2>
-            <img src="static/img/reconstruction.jpg" alt="Dataset images" style="width:100%;">
-            <h4 style="margin: 80px 0 5px 0px;"><strong>Signal estimation from modified short-time Fourier transform</strong></h4>
+            <img src="static/img/reconstruction.jpg" alt="Dataset images" style="width:95%;">
+            <h4 style="margin: 20px 0 5px 0px;"><strong>Signal estimation from modified short-time Fourier transform</strong></h4>
             <h6> D. Griffin and Jae Lim</h6>  
           </section>
         </section>
@@ -122,7 +121,7 @@
           </section>
           <section>
             <h2>~2,000 impulse responses</h2>
-            <img src="static/img/datasetimages.jpg" alt="Dataset images" style="width:100%;">
+            <img src="static/img/datasetimages.jpg" alt="Dataset images" style="width:95%;">
             <h4 style="text-align: center" class="fragment fade-up">Truncated to 2 seconds in length</h4>
             <h4 style="text-align: center" class="fragment fade-up">Downsampled to 16 kHz</h4>
             <h6 style="text-align: center">Open AIR Library, Greg Hopkins, C4DM, and others</h6>
@@ -155,20 +154,23 @@
           </section>
           <section>
             <h2>Latent Space</h2>
-            <!-- Create a cool GIF here that shows traversal of the latent space -->
-            <img src="static/img/traverse_circle_tilt.gif" alt="latent space" style="width:100%;">  
+            <img src="static/img/traverse_circle_tilt.gif" alt="latent space" style="width:95%;">  
           </section>
           <section>
             <h2>Stereo Width</h2>
-            <h4>dsp.FrequencyDomainFIRFilter System object</h4>
+            <h4 class="fragment fade-up" style="margin: 10px 0 0px 0px; text-align: center;"> Autoencoder trained on mono impulse responses</h4>
+            <h4 class="fragment fade-up" style="margin: 10px 0 0px 0px; text-align: center;"> Width control uses differnt impulse responses for Left and right channel</h4>
+            <h4 class="fragment fade-up" style="margin: 10px 0 0px 0px; text-align: center;"> <strong>dsp.FrequencyDomainFIRFilter System object</strong></h4>
           </section>
           <section>
             <h2>Pre-Delay</h2>
-            <h4>dsp.VariableFractionalDelay System object</h4>
+            <h4 class="fragment fade-up" style="margin: 10px 0 0px 0px; text-align: center;"> Delay the onset of the reverb signal</h4>
+            <h4 class="fragment fade-up" style="margin: 10px 0 0px 0px; text-align: center;"> <strong>dsp.VariableFractionalDelay System object</strong> </h4>
           </section>
           <section>
             <h2>Filtering</h2>
-            <h4>filter</h4>
+            <h4 class="fragment fade-up" style="margin: 10px 0 0px 0px; text-align: center;"> Second order highpass and lowpass filters</h4>
+            <h4 class="fragment fade-up" style="margin: 10px 0 0px 0px; text-align: center;"> <strong>filter() function</strong></h4>
             <h4></h4>
           </section>
         </section>
@@ -181,13 +183,13 @@
           </section>
           <section>
             <h2>Latent space arithmetic</h2>
-            <img src="static/img/facemaths.jpg" alt="Face maths" style="margin: 50px 0 0 0; width:100%;">
+            <img src="static/img/facemaths.jpg" alt="Face maths" style="margin: 50px 0 0 0; width:95%;">
             <h4 style="margin: 80px 0 5px 0px;"><strong>Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks</strong></h4>
             <h6> Alec Radford, Luke Metz, Soumith Chintala</h6>           
           </section>
           <section>
             <h2>Impulse response parallel</h2>
-            <img src="static/img/nverbmaths.jpg" alt="nverb maths" style="width:100%;">  
+            <img src="static/img/nverbmaths.jpg" alt="nverb maths" style="width:95%;">  
           </section>
           <section>
             <h2>WaveNet autoencoder architecture</h2>
