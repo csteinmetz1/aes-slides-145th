@@ -56,33 +56,44 @@
                 <img src=static/img/plugin.jpg alt=plugin>
               </div>
 							<div class="coloumn">							
-                <div class="fragment highlight-current-blue">
-                  <audio controls>
-                    <source src=static/media/eGtrDemoDry.wav type=audio/wav>
-                  </audio> 
-                  <p>Dry</p>
-                </div>
-                <div class="fragment highlight-current-blue">
-                  <audio controls>
-                    <source src=static/media/eGtrDemoDry.wav type=audio/wav>
-                  </audio> 
-                  <p>Dry</p>
-                </div>						
-                <div class="fragment highlight-current-blue">
-                  <audio controls>
-                    <source src=static/media/eGtrDemoDry.wav type=audio/wav>
-                  </audio> 
-                  <p>Dry</p>
-                </div>
-                <div class="fragment highlight-current-blue">
-                  <audio controls>
-                    <source src=static/media/eGtrDemoDry.wav type=audio/wav>
-                  </audio> 
-                  <p>Dry</p>
-                </div>				        
+                <audio controls>
+                  <source src=static/media/dry.wav type=audio/wav>
+                </audio> 
+                <p>Dry</p>
+                <audio controls>
+                  <source src=static/media/wet2.wav type=audio/wav>
+                </audio> 
+                <p>Short reverb</p>				
+                <audio controls>
+                  <source src=static/media/wet3.wav type=audio/wav>
+                </audio> 
+                <p>Long dark reverb</p>
+                <audio controls>
+                  <source src=static/media/wet1.wav type=audio/wav>
+                </audio> 
+                <p>Strange delay</p>			        
               </div>
             </div>
 					</section>
+        </section>
+        <!-- Convolutional Reverb -->
+        <section>
+          <section>          
+            <div class="divider_h1">
+              <h1>Convolutional Reverb</h1>
+            </div>
+          </section>
+          <section>
+            <img src="static/img/hall.jpg" alt="Hall" style="width:95%;">
+            <div class="fragment highlight-current-blue">
+              <audio controls>
+                <source src=static/media/hall.wav type=audio/wav>
+              </audio> 
+              <audio controls>
+                <source src=static/media/hall_gtr.wav type=audio/wav>
+              </audio> 
+            </div>				  
+          </section>
         </section>
         <!-- Autoencoders -->
         <section>
@@ -159,7 +170,7 @@
           <section>
             <h2>Stereo Width</h2>
             <h4 class="fragment fade-up" style="margin: 10px 0 0px 0px; text-align: center;"> Autoencoder trained on mono impulse responses</h4>
-            <h4 class="fragment fade-up" style="margin: 10px 0 0px 0px; text-align: center;"> Width control uses differnt impulse responses for Left and right channel</h4>
+            <h4 class="fragment fade-up" style="margin: 10px 0 0px 0px; text-align: center;"> Width control uses different impulse responses for Left and right channel</h4>
             <h4 class="fragment fade-up" style="margin: 10px 0 0px 0px; text-align: center;"> <strong>dsp.FrequencyDomainFIRFilter System object</strong></h4>
           </section>
           <section>
