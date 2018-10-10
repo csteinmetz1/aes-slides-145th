@@ -41,16 +41,31 @@
 				<section>
 					<section>
 						<div class="divider_h1">
-				    		<h1>What is it?</h1>
+				    	<h1>What is it?</h1>
 						</div>
 					</section>
 					<section>						
 						<h2>AI driven convolutional reverb plug-in</h2>
-						<br>
             <img src=static/img/plugin.jpg alt=plugin>
             <h5 style="text-align: center">VST plug-in running in REAPER DAW</h5>
-					</section>
+          </section>
+          <section>
+            <h2>Convolutional reverb</h2>
+            <img src="static/img/hall.jpg" alt="Hall" style="width:60%;">
+            <br>
+            <audio controls>
+              <source src=static/media/hall.wav type=audio/wav>
+            </audio> 
+            <audio controls>
+              <source src=static/media/hall_gtr.wav type=audio/wav>
+            </audio> 		  
+          </section>
+          <section>
+            <h2>Autoencoder</h2>
+            <img src="static/img/spectral_autoencoder.jpg" alt="Spectral Autoencoder" style="width:95%;">
+          </section>
 					<section>
+            <h2>How does it sound?</h2>
 						<div class="row">
 		      		<div class="column">
                 <img src=static/img/plugin.jpg alt=plugin>
@@ -76,53 +91,6 @@
             </div>
 					</section>
         </section>
-        <!-- Convolutional Reverb -->
-        <section>
-          <section>          
-            <div class="divider_h1">
-              <h1>Convolutional Reverb</h1>
-            </div>
-          </section>
-          <section>
-            <img src="static/img/hall.jpg" alt="Hall" style="width:95%;">
-            <div class="fragment highlight-current-blue">
-              <audio controls>
-                <source src=static/media/hall.wav type=audio/wav>
-              </audio> 
-              <audio controls>
-                <source src=static/media/hall_gtr.wav type=audio/wav>
-              </audio> 
-            </div>				  
-          </section>
-        </section>
-        <!-- Autoencoders -->
-        <section>
-          <section>          
-            <div class="divider_h1">
-              <h1>Autoencoders</h1>
-            </div>
-          </section>
-          <section>
-            <h2>MNIST Digit Autoencoder</h2>
-            <img src="static/img/mnist_autoencoder.jpg" alt="MNIST Autoencoder" style="width:95%;">
-          </section>
-          <section>
-              <h2>Spectral Autoencoder</h2>
-              <img src="static/img/spectral_autoencoder.jpg" alt="Spectral Autoencoder" style="width:95%;">
-              <audio controls>
-									<source src=static/media/input.mp3 type=audio/wav>
-              </audio>
-              <audio controls>
-                <source src=static/media/output.mp3 type=audio/wav>
-              </audio>  
-          </section>
-          <section>
-            <h2>Phase Reconstruction</h2>
-            <img src="static/img/reconstruction.jpg" alt="Dataset images" style="width:95%;">
-            <h4 style="margin: 20px 0 5px 0px;"><strong>Signal estimation from modified short-time Fourier transform</strong></h4>
-            <h6> D. Griffin and Jae Lim</h6>  
-          </section>
-        </section>
         <!-- Dataset -->
         <section>
           <section>          
@@ -138,6 +106,30 @@
             <h6 style="text-align: center">Open AIR Library, Greg Hopkins, C4DM, and others</h6>
           </section>
         </section>
+        <!-- Autoencoders -->
+        <section>
+            <section>          
+              <div class="divider_h1">
+                <h1>Autoencoders</h1>
+              </div>
+            </section>
+            <section>
+                <h2>Spectral Autoencoder</h2>
+                <img src="static/img/spectral_autoencoder.jpg" alt="Spectral Autoencoder" style="width:95%;">
+                <audio controls>
+                    <source src=static/media/input.mp3 type=audio/wav>
+                </audio>
+                <audio controls>
+                  <source src=static/media/output.mp3 type=audio/wav>
+                </audio>  
+            </section>
+            <section>
+              <h2>Phase Reconstruction</h2>
+              <img src="static/img/reconstruction.jpg" alt="Dataset images" style="width:95%;">
+              <h4 style="margin: 20px 0 5px 0px;"><strong>Signal estimation from modified short-time Fourier transform</strong></h4>
+              <h6> D. Griffin and Jae Lim</h6>  
+            </section>
+          </section>
         <!-- Plug-in -->
         <section>
           <section>
